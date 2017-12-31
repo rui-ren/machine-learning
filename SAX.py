@@ -3,7 +3,6 @@ def znormalization(ts):
     nus = ts.mean(axis = 0)
     stds = ts. std(axis = 0)
     return (ts - mus) / stds
-
 import numpy as np
 ts1 = np.asarray([2.02, 2.33, 2.99, 6.85, 9.20, 8.80, 7.50, 6.00, 5.85, 3.85, 4.85, 3.85, 2.22, 1.45, 1.34])
 ts2 = np.asarray([0.50, 1.29, 2.58, 3.83, 3.25, 4.25, 3.83, 5.63, 6.44, 6.25, 8.75, 8.83, 3.25, 0.75, 0.72])
@@ -57,4 +56,4 @@ for i in [0, 1]:
         paa_ts = paa_transform(znormalization(ts), n_pieces)
     return np.apply_along_axis(translate, 0, paa_ts)
 
-sax_transform(ts, 9, "abcd")
+    sax_transform(ts, 9, "abcd")
