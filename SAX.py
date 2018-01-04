@@ -27,8 +27,6 @@ for i in [0, 1]:
     pl.plot(zts.iloc[:, i], '-+', label = "ts%i"%i)
     pl.plot(split9_ext[:, i], label = "paa%i"%i)
     pl.legend(loc = "upper left")
-
-
     def sax_transform(ts, n_pieces, alphabet):
     """
     ts: columns of which are time serieses represented by np.array
